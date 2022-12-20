@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+    <title>Ujian</title>
+    <style>
+        * {box-sizing: border-box}
+        body {
+            font-family: "Poppins";
+            background: white;
+            text-align: center;
+        }
+        h3 {
+            font-weight: normal;
+        }
+        button {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 100px;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 13%;
+            opacity: 0.9;
+            font-family: "Poppins";
+            font-weight: bold;
+            font-size: medium;
+        }
+        button:hover {
+            opacity:1;
+        }
+        .ujian {
+        padding: 14px 20px;
+        background: linear-gradient(122.06deg, #69C371 0%, #6AC46C 0.01%, #253F96 100.02%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 100px;
+        }
+        .left {
+            width: 20%;
+            float: left;
+            background: #f1f1f1;
+            padding: 10px;
+            border-radius: 10px;
+            margin-left: 100px;
+        }
+        .right {
+            width: 20%;
+            float: right;
+            background: #f1f1f1;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        h1, .sidebar {
+            background: linear-gradient(122.06deg, #69C371 0%, #6AC46C 0.01%, #253F96 100.02%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ujian Seleksi Pegawai</h1>
+    </header>
+    <div class="soal">
+        <div class="left">
+            <h3>Nomor</h3>
+        </div>
+    </div>
+    <div class="right">
+        <div class="sidebar">
+            <h3><b>Sisa Waktu</b></h3>
+            <h1 id="demo"></h1>
+            <p><a href="#">Akhiri Ujian</a></p>
+        </div>
+    </div>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Dec 20, 2022 13:00:00").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+            
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+            
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
+</body>
+</html>
