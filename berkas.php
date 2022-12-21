@@ -2,6 +2,9 @@
 <html>
     <head>
         <title>Daftar Ujian</title>
+        <!--  -->
+        <!-- ***** Header ***** -->
+        <?php include('header.php') ?>
         <link rel="stylesheet" href="assets/css/berkas.css">
     </head>
     <body>
@@ -9,58 +12,56 @@
             <h1>Upload Berkas</h1>
             <h3>Silahkan Upload Berkas Anda !</h3>
         </header>
-        <form action="index.php" method="post" enctype="multipart/form-data">
-            <div class="form-group row">
-                <label for="foto" class="col-sm-2 col-form-label"><b>Foto Diri (4x6)</b></label>
-                <div class="col-sm-10">
-                    <input type="file" name = "foto" class="form-control" id="foto" >
-                </div>
-            </div>
-            <button type="submit" name="simpanFoto" class="submit">Simpan</button>
-         
- </form>
- <form action="index.php" method="post" enctype="multipart/form-data">         
-            <div class="form-group row">
-                <label for="ijazah" class="col-sm-2 col-form-label"><b>Ijazah</b></label>
-                <div class="col-sm-10">
-                    <input type="file" name="ijazah" class="form-control" id="ijazah">
-                </div>
-            </div>
-            <button type="submit" name="simpanIjazah" class="submit">Simpan</button>
-         
- </form>
- <form action="index.php" method="post" enctype="multipart/form-data">  
-            <div class="form-group row">
-                <label for="cv" class="col-sm-2 col-form-label"><b>CV</b></label>
-                <div class="col-sm-10">
-                    <input type="file" name="cv" class="form-control" id="cv">
-                </div>
-            </div>
-            <button type="submit" name="simpanCV" class="submit">Simpan</button>
-         
-</form>
-<form action="index.php" method="post" enctype="multipart/form-data">  
-            <div class="form-group row">
-            <div class="form-group row">
-                <label for="transkipNilai" class="col-sm-2 col-form-label"><b>Transkip Nilai</b></label>
-                <div class="col-sm-10">
-                    <input type="file" name="transkipNilai" class="form-control" id="transkipNilai">
-                </div>
-            </div>
-
-            <button type="submit" name="simpanTranskip" class="submit">Simpan</button>
-</form>
-<form action="index.php" method="post" enctype="multipart/form-data">  
-            <div class="form-group row">
-                <label for="sertifikat" class="col-sm-2 col-form-label"><b>Sertifikat Akreditasi</b></label>
+        <div class="fieldset">
+            <form action="index.php" method="post" enctype="multipart/form-data">
+                <div class="form-group row">
+                    <label for="foto" class="col-sm-2 col-form-label"><b>Foto Diri (4x6)</b></label>
                     <div class="col-sm-10">
-                    <input type="file" name="sertifikat" class="form-control" id="sertifikat">
+                        <input type="file" name = "foto" class="form-control" id="foto" >
+                    </div>
                 </div>
-            </div>
+                <button type="submit" name="simpanFoto" class="submit">Simpan</button>
+            </form>
 
-            <button type="submit" name="simpanSertifkat" class="submit">Simpan</button>
-</form>
+            <form action="index.php" method="post" enctype="multipart/form-data">         
+                <div class="form-group row">
+                    <label for="ijazah" class="col-sm-2 col-form-label"><b>Ijazah</b></label>
+                    <div class="col-sm-10">
+                        <input type="file" name="ijazah" class="form-control" id="ijazah">
+                    </div>
+                </div>
+                <button type="submit" name="simpanIjazah" class="submit">Simpan</button>
+            </form>
 
+            <form action="index.php" method="post" enctype="multipart/form-data">  
+                <div class="form-group row">
+                    <label for="cv" class="col-sm-2 col-form-label"><b>CV</b></label>
+                    <div class="col-sm-10">
+                        <input type="file" name="cv" class="form-control" id="cv">
+                    </div>
+                </div>
+                <button type="submit" name="simpanCV" class="submit">Simpan</button>  
+            </form>
+
+            <form action="index.php" method="post" enctype="multipart/form-data">  
+                <div class="form-group row">
+                    <label for="transkipNilai" class="col-sm-2 col-form-label"><b>Transkip Nilai</b></label>
+                    <div class="col-sm-10">
+                        <input type="file" name="transkipNilai" class="form-control" id="transkipNilai">
+                    </div>
+                </div>
+                <button type="submit" name="simpanTranskip" class="submit">Simpan</button>
+            </form>
+            
+            <form action="index.php" method="post" enctype="multipart/form-data">  
+                <div class="form-group row">
+                    <label for="sertifikat" class="col-sm-2 col-form-label"><b>Sertifikat Akreditasi</b></label>
+                    <div class="col-sm-10">
+                        <input type="file" name="sertifikat" class="form-control" id="sertifikat">
+                    </div>
+                </div>
+                <button type="submit" name="simpanSertifkat" class="submit">Simpan</button>
+            </form>
         </div>
     </body>
 <html>

@@ -35,7 +35,7 @@
             </div>
             <div class="col-lg-6">
               <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="assets/images/logoo.png" alt="logoo top" style="width: 500px; ">
+                <img src="assets/images/logoo.png" alt="logoo top" style="width: 400px; ">
               </div>
             </div>
           </div>
@@ -75,8 +75,8 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <?php include 'berkas.php' ?>
+    <div class="container text-center">
+      <a href="berkas.php"><button class="btn btn-primary">Upload Berkas</button></a>
     </div>
   </div>
   
@@ -92,7 +92,7 @@
           </div>
         </div>
         <div class="col-lg-12 text-center">
-          <button type="submit" class="btn btn-primary">Cetak</button>
+        <a href="cetak.php"><button type="submit" class="btn btn-primary">Cetak Kartu</button></a>
         </div>
       </div>
     </div>

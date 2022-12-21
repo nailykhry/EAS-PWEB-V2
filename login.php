@@ -86,7 +86,7 @@
         $query = "SELECT * FROM users WHERE U_NIK = $NIK AND U_password = $password ";
         $result = mysqli_query($conn, $query);
      
-        if(mysqli_num_rows($result))
+        if(!$result || mysqli_num_rows($result) == 0)
         {
             ?>
                 <script language='javascript'>alert('Berhasil login akun!');</script>
