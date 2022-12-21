@@ -223,7 +223,14 @@ if (isset($_POST['simpanSertifkat'])){
                 </div>
                 <button type="submit" name="simpanSertifkat" class="submit">Simpan</button>
             </form>
+            <button type="button"  class="btn btn-danger rounded-lg" onclick="goToIndex()">Back</button>
         </div>
+        <script>
+            function goToIndex()
+            {
+                window.location.href = "index.php";
+            }
+        </script>
     </body>
 <html>
 

@@ -16,7 +16,6 @@
        
     </head>
     <body>
-
     <?php 
     include 'dbconnect.php' ;
     session_start();
@@ -37,7 +36,6 @@
 
     
     ?>
-
         <header>
             <h1>Cetak Kartu Ujian</h1>
             <h3>Berkas Anda telah terverifikasi. Silahkan unduh dan cetak kartu ujian Anda !</h3>
@@ -45,10 +43,7 @@
         <div class="pl-5">
         <div class="container">
             <div class="card my-5 pb-5" id="makepdf">
-
-               
                 <div class="pl-5">
-                    
                     <div class="row my-3">
                         <div class="col-3"> <img src="assets/images/logoo.png" alt="logo" class="logo"></div>
                         <div class="col-6 text-center">
@@ -56,11 +51,11 @@
                             <h5>Formasi Lulusan Terbaik</h5>
                         </div>
                         <div class="col-3">
-                            <div class="qrcode" style="width:150px"></div>
+                            <div class="qrcode" style="width:100px"></div>
                         </div>
                     </div>
                     <hr>
-                    <img src="berkas/foto/<?= $foto['B_file']; ?>" alt="foto" style="width: 100px;" class="center">
+                    <img src="berkas/foto/<?= $foto['B_file']; ?>" alt="foto" style="width: 50px;" class="center">
                     <br>
                     <table>
                         <tr>
@@ -100,13 +95,13 @@
                             <td>: <?= $jabatan['J_jabatan']; ?></td>
                         </tr>
                     </table>
-                    <div class="qrcode" style="width:200px"></div>
-                    
 
                 </div>
             </div>
         </div>
             <button type="button"  id="button" class="download">Unduh</button>
+            <button type="button"  class="btn btn-danger rounded-lg" onclick="goToIndex()">Back</button>
+            
         </div>
 <br>
     <script>
@@ -121,6 +116,10 @@
 
 			button.addEventListener('click', generatePDF);
 
+            function goToIndex()
+            {
+                window.location.href = "index.php";
+            }
         
 		</script>
         <script>

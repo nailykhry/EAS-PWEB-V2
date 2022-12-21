@@ -42,13 +42,13 @@
                     <label for="jkel" class="col-sm-2 col-form-label">Jenis Kelamin</label>
                         <div class="col-sm-10">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="jenisKelamin" id="laki" value="option1" checked>
+                                <input class="form-check-input" type="radio" name="jenisKelamin" id="laki" value="L" checked>
                                 <label class="form-check-label" for="laki">
                                     Laki-laki
                                 </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="jenisKelamin" id="perempuan" value="option2">
+                                <input class="form-check-input" type="radio" name="jenisKelamin" id="perempuan" value="P">
                                 <label class="form-check-label" for="perempuan">
                                     Perempuan
                                 </label>
@@ -63,6 +63,19 @@
                         <input type="text" class="form-control" name="alamat" id="alamat" placeholder="Alamat">
                     </div>
                 </div>
+
+                <div class="form-group row">
+                    <label for="jabatan" class="col-sm-2 col-form-label">Jabatan</label>
+                        <div class="col-sm-10">
+                        <select name="jabatan" id="jabatan" >  
+                            <?php while ($row = $jabatan->fetch_assoc()) { ?>
+                            <option value="<?= $row['J_id']; ?>">
+                            <?= $row['J_id']; ?> | <?= $row['J_jabatan']; ?></option>
+                            <?php } ?>
+                        </select>
+                    </div>
+                </div>
+             
 
                 <div class="form-group row">
                     <label for="pendidikan" class="col-sm-2 col-form-label">Kualifikasi Pendidikan</label>
@@ -81,12 +94,11 @@
                 </div>
             </div>
             </form>
+            <button type="button"  class="btn btn-danger rounded-lg" onclick="goToIndex()">Back</button>
         </div>
 
 
         <?php 
-        
-        echo $_SESSION['nik'];
         if(isset($_POST['simpan_pendaftaran'])){
             $nama               = $_POST['name'];
             $tempatLahir        = $_POST['tempatLahir'];
@@ -95,12 +107,13 @@
             $alamat             = $_POST['alamat'];
             $pendidikan         = $_POST['pendidikan'];
             $telepon            = $_POST['telepon'];
+            $jabatan            = $_POST['jabatan'];
             $SESSION           = $_SESSION['nik'];
 
             // query SQL untuk insert data
             $query="UPDATE users SET U_nama='$nama', U_tempatLahir='$tempatLahir',
                     U_tanggalLahir='$tanggalLahir', U_jenisKelamin='$jenisKelamin', U_alamat='$alamat',
-                    U_pendidikan='$pendidikan', U_telepon='$telepon'
+                    U_pendidikan='$pendidikan', U_telepon='$telepon', J_id='$jabatan'
                     where U_NIK = $SESSION";
 
 
@@ -124,6 +137,12 @@
         ?>
         
 
+        <script>
+            function goToIndex()
+            {
+                window.location.href = "index.php";
+            }
+        </script>
 
     </body>
 <html>
