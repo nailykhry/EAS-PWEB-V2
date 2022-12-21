@@ -2,8 +2,8 @@
 <html>
     <head>
         <title>Daftar Ujian</title>
-        <link rel="stylesheet" href="assets/css/cetak.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/cetak.css">
         <script
 			src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
 			integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
@@ -42,19 +42,26 @@
             <h1>Cetak Kartu Ujian</h1>
             <h3>Berkas Anda telah terverifikasi. Silahkan unduh dan cetak kartu ujian Anda !</h3>
         </header>
+        <div class="pl-5">
         <div class="container">
             <div class="card my-5 pb-5" id="makepdf">
 
-                <div class="row my-2">
-                    <div class="col-4"> <img src="assets/images/logoo.png" alt="logo"></div>
-                    <div class="col-8 text-center">
-                        <h3>Kartu Peserta Ujian CPNS 2022</h3>
-                        <h5>Formasi Lulusan Terbaik</h5>
-                    </div>
-                </div>
-                <hr>
                
-                <div>
+                <div class="pl-5">
+                    
+                    <div class="row my-3">
+                        <div class="col-3"> <img src="assets/images/logoo.png" alt="logo" class="logo"></div>
+                        <div class="col-6 text-center">
+                            <h3><b>Kartu Peserta Ujian CPNS 2022</b></h3>
+                            <h5>Formasi Lulusan Terbaik</h5>
+                        </div>
+                        <div class="col-3">
+                            <div class="qrcode" style="width:150px"></div>
+                        </div>
+                    </div>
+                    <hr>
+                    <img src="berkas/foto/<?= $foto['B_file']; ?>" alt="foto" style="width: 100px;" class="center">
+                    <br>
                     <table>
                         <tr>
                             <td>Instansi</td>
@@ -93,23 +100,15 @@
                             <td>: <?= $jabatan['J_jabatan']; ?></td>
                         </tr>
                     </table>
+                    <div class="qrcode" style="width:200px"></div>
                     
+
                 </div>
-
-                <br>
-
-                <img src="berkas/foto/<?= $foto['B_file']; ?>" alt="foto" style="width: 100px;">
-                <br>
-                
-                <div class="qrcode" style="width:200px"></div>
-               
-
             </div>
-         
-            <button type="button"  id="button" class="download">Unduh</button>
-
         </div>
-
+            <button type="button"  id="button" class="download">Unduh</button>
+        </div>
+<br>
     <script>
 			const button = document.getElementById('button');
 
