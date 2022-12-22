@@ -80,7 +80,14 @@
                         </tr>
                         <tr>
                             <td>Jenis Kelamin</td>
-                            <td>: <?= $users['U_jenisKelamin']; ?></td>
+                            <td>: <?php 
+                            if($users['U_jenisKelamin']=='P'){
+                                echo "Perempuan";
+                            }
+                            else
+                            {
+                                echo "Laki-laki";
+                            } ?></td>
                         </tr>
                         <tr>
                             <td>Tempat / Tanggal Lahir</td>

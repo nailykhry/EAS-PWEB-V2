@@ -12,10 +12,7 @@
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
               <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="#daftar">Daftar Ujian</a></li>
-              <li class="scroll-to-section"><a href="#berkas">Upload Berkas</a></li>
-              <li class="scroll-to-section"><a href="#kartu">Cetak Kartu</a></li>
-              <li class="scroll-to-section"><a href="#ujian">Ujian</a></li>
+            
               <li>
                 <div class="gradient-button" name="close_session">
                   <a href="signup.php">

@@ -110,7 +110,7 @@
           </div>
         </div>
         <div class="col-lg-12 text-center">
-          <a href="https://google.com" class="btn btn-primary">Ambil Ujian</a>
+          <a href="ujian-start.php" class="btn btn-primary">Ambil Ujian</a>
         </div>
       </div>
     </div>
