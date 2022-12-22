@@ -4,6 +4,7 @@
 
 <!-- ***** Header ***** -->
 <?php include('header.php') ?>
+<link rel="stylesheet" href="assets/css/index.css">   
 
 <body>
 
@@ -26,9 +27,9 @@
             <div class="col-lg-6 align-self-center">
               <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <div class="row">
-                  <div class="col-lg-12">
-                    <h2>Seleksi Pegawai</h2>
-                    <p>Kementrian Kelautan dan Perikanan Provinsi Jawa Timur</p>
+                  <div class="col-lg-8">
+                    <h1>Seleksi Pegawai</h1>
+                    <h5>Kementrian Kelautan dan Perikanan Provinsi Jawa Timur</h5>
                   </div>
                 </div>
               </div>
@@ -50,7 +51,7 @@
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-            <h4>Daftar <em>Ujian</em></h4>
+            <h4>Daftar <em style="color: #253F96; ">Ujian</em></h4>
             <img src="assets/images/heading-line-dec.png" alt="">
             <p>Silahkan lengkapi data diri Anda !</p>
           </div>
@@ -68,7 +69,7 @@
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-            <h4>Upload <em>Berkas</em></h4>
+            <h4>Upload <em style="color: #253F96; ">Berkas</em></h4>
             <img src="assets/images/heading-line-dec.png" alt="">
             <p>Silahkan upload berkas Anda !</p>
           </div>
@@ -86,7 +87,7 @@
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading">
-            <h4>Cetak <em>Kartu</em> Ujian</h4>
+            <h4>Cetak <em style="color: #253F96; ">Kartu</em> Ujian</h4>
             <img src="assets/images/heading-line-dec.png" alt="">
             <p>Berkas Anda telah terverifikasi. Silahkan cetak kartu ujian Anda !</p>
           </div>
@@ -103,7 +104,7 @@
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading">
-            <h4>Ujian <em>Seleksi</em> Pegawai</h4>
+            <h4>Ujian <em style="color: #253F96; ">Seleksi</em> Pegawai</h4>
             <img src="assets/images/heading-line-dec.png" alt="">
             <p>Anda diberikan waktu 120 menit untuk mengerjakan ujian. Ujian hanya dapat dilakukan satu kali. Selamat mengerjakan !</p>
           </div>

@@ -4,6 +4,7 @@
 
 <!-- ***** Header ***** -->
 <?php include('header.php') ?>
+<link rel="stylesheet" href="assets/css/index.css">
 
 <body>
 
@@ -23,9 +24,9 @@
             <div class="col-lg-6 align-self-center">
               <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <div class="row">
-                  <div class="col-lg-12">
-                    <h2>Seleksi Pegawai</h2>
-                    <p>Kementrian Kelautan dan Perikanan Provinsi Jawa Timur</p>
+                  <div class="col-lg-8">
+                    <h1>Seleksi Pegawai</h1>
+                    <h5>Kementrian Kelautan dan Perikanan Provinsi Jawa Timur</h5>
                   </div>
                 </div>
               </div>

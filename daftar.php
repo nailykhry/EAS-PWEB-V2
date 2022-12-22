@@ -3,8 +3,8 @@
     <head>
         <title>Daftar Ujian</title>
         <!-- ***** Header ***** -->
-        <?php include('header.php') ?>
-        <link rel="stylesheet" href="assets/css/daftar.css">        
+        <?php include('header.php') ?> 
+        <link rel="stylesheet" href="assets/css/daftar.css">    
     </head>
     <body>
         <!-- SESSION -->
@@ -67,7 +67,15 @@
                 <div class="form-group row">
                     <label for="jabatan" class="col-sm-2 col-form-label">Jabatan</label>
                         <div class="col-sm-10">
-                        <select name="jabatan" id="jabatan" >  
+                        <select name="jabatan" id="jabatan" class="jabatan"
+                            style="width: 100%;
+                                    padding: 10px;
+                                    margin: 0 0 20px 0;
+                                    display: inline-block;
+                                    border: none;
+                                    background: #f1f1f1;
+                                    border-radius: 100px;
+                                    color: black; ">  
                             <?php while ($row = $jabatan->fetch_assoc()) { ?>
                             <option value="<?= $row['J_id']; ?>">
                             <?= $row['J_id']; ?> | <?= $row['J_jabatan']; ?></option>
@@ -91,10 +99,23 @@
                     </div>
                 </div>
                 <button type="submit" name="simpan_pendaftaran" class="submit">Simpan</button>
+                <button type="button"  class="btn btn-danger rounded-lg" onclick="goToIndex()" 
+                        style="border-radius: 100px; 
+                                border: none; 
+                                padding: 10px 10px;
+                                background: linear-gradient(122.06deg, #69C371 0%, #6AC46C 0.01%, #253F96 100.02%);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                background-clip: text;
+                                text-fill-color: transparent;
+                                font-weight: bold;
+                                ">
+                    Kembali
+                </button>
                 </div>
             </div>
             </form>
-            <button type="button"  class="btn btn-danger rounded-lg" onclick="goToIndex()">Back</button>
+            
         </div>
 
 

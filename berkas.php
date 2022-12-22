@@ -223,7 +223,19 @@ if (isset($_POST['simpanSertifkat'])){
                 </div>
                 <button type="submit" name="simpanSertifkat" class="submit">Simpan</button>
             </form>
-            <button type="button"  class="btn btn-danger rounded-lg" onclick="goToIndex()">Back</button>
+            <button type="button"  class="btn btn-danger rounded-lg" onclick="goToIndex()" 
+                    style="border-radius: 100px; 
+                            border: none; 
+                            padding: 10px 10px;
+                            background: linear-gradient(122.06deg, #69C371 0%, #6AC46C 0.01%, #253F96 100.02%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                            text-fill-color: transparent;
+                            font-weight: bold; 
+                            float: left; ">
+                Kembali
+            </button>
         </div>
         <script>
             function goToIndex()
