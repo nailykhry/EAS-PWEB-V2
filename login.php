@@ -93,7 +93,7 @@
             <?php 
             session_start();
             $_SESSION['nik'] = $_POST['nik'];
-            header('Location: index.php');
+            header('Location: index_auth.php');
         }
         else
         {

@@ -240,7 +240,7 @@ if (isset($_POST['simpanSertifkat'])){
         <script>
             function goToIndex()
             {
-                window.location.href = "index.php";
+                window.location.href = "index_auth.php";
             }
         </script>
     </body>

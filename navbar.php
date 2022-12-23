@@ -5,7 +5,7 @@
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="index.php" class="logo">
+            <a href="index_auth.php" class="logo">
               <img src="assets/images/logoo.png" alt="Chain App Dev" style="width: 100px;">
             </a>
             <!-- ***** Logo End ***** -->
@@ -18,7 +18,7 @@
               <li class="scroll-to-section"><a href="#ujian">Ujian</a></li>
               <li>
                 <div class="button gradient-button" name="restart">
-                  <a href="index_nonauth.php">
+                  <a href="index.php">
                     <i class="fa fa-sign-in-alt"></i>Log out
                   </a>
                 </div>

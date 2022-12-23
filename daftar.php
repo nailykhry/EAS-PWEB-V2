@@ -142,7 +142,7 @@
             ?>
                 <script language='javascript'>
                     alert('Berhasil mendaftar ujian, segera unggah berkas!');
-                    window.location.href = 'index.php';
+                    window.location.href = 'index_auth.php';
                 </script><?php 
                 
             } else {
@@ -161,7 +161,7 @@
         <script>
             function goToIndex()
             {
-                window.location.href = "index.php";
+                window.location.href = "index_auth.php";
             }
         </script>
 

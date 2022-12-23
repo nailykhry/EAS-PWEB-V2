@@ -4,7 +4,7 @@
 
 <!-- ***** Header ***** -->
 <?php include('header.php') ?>
-<link rel="stylesheet" href="assets/css/index.css">   
+<link rel="stylesheet" href="assets/css/index.css">
 
 <body>
 
@@ -13,10 +13,7 @@
 
 
   <!-- ***** Header Area ***** -->
-  <?php include('navbar.php') ?>
-
-  <!-- SESSION -->
-  <?php session_start(); ?>
+  <?php include('navbar-nonauth.php') ?>
 
   <!-- ID TOP -->
   <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
@@ -44,77 +41,6 @@
       </div>
     </div>
   </div>
-
-  <!-- ID UJIAN -->
-  <div id="daftar" class="services section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-            <h4>Daftar <em style="color: #253F96; ">Ujian</em></h4>
-            <img src="assets/images/heading-line-dec.png" alt="">
-            <p>Silahkan lengkapi data diri Anda !</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container text-center">
-      <a href="daftar.php"><button class="btn btn-primary">Daftar Ujian</button></a>
-    </div>
-  </div>
-
-
-  <div id="berkas" class="services section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-            <h4>Upload <em style="color: #253F96; ">Berkas</em></h4>
-            <img src="assets/images/heading-line-dec.png" alt="">
-            <p>Silahkan upload berkas Anda !</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container text-center">
-      <a href="berkas.php"><button class="btn btn-primary">Upload Berkas</button></a>
-    </div>
-  </div>
-  
-
-  <div id="kartu" class="the-clients">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-          <div class="section-heading">
-            <h4>Cetak <em style="color: #253F96; ">Kartu</em> Ujian</h4>
-            <img src="assets/images/heading-line-dec.png" alt="">
-            <p>Berkas Anda telah terverifikasi. Silahkan cetak kartu ujian Anda !</p>
-          </div>
-        </div>
-        <div class="col-lg-12 text-center">
-        <a href="cetak.php"><button type="submit" class="btn btn-primary">Cetak Kartu</button></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="ujian" class="pricing-tables">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-          <div class="section-heading">
-            <h4>Ujian <em style="color: #253F96; ">Seleksi</em> Pegawai</h4>
-            <img src="assets/images/heading-line-dec.png" alt="">
-            <p>Anda diberikan waktu 120 menit untuk mengerjakan ujian. Ujian hanya dapat dilakukan satu kali. Selamat mengerjakan !</p>
-          </div>
-        </div>
-        <div class="col-lg-12 text-center">
-          <a href="ujian-start.php" class="btn btn-primary">Ambil Ujian</a>
-        </div>
-      </div>
-    </div>
-  </div> 
 
   <!-- FOOTER -->
   <?php include('footer.php') ?>
